@@ -1,0 +1,91 @@
+Unix assignment -3
+----------------------
+1: What is a shell?
+
+In Unix, the shell is a program that interprets commands and acts as an intermediary between the user and the inner workings of the operating system. It provides a command line interface called the shell prompt or command prompt.
+
+
+
+
+2: What are the different types of commonly used shells  on a typical linux system?In UNIX there are two major types of shells:
+
+The Bourne shell. If you are using a Bourne-type shell, the default prompt is the $ character.
+
+The C shell. If you are using a C-type shell, the default prompt is the % character.
+
+There are again various subcategories for Bourne Shell which are listed as follows ?
+
+Bourne shell ( sh)
+
+Korn shell ( ksh)
+
+Bourne Again shell ( bash)
+
+POSIX shell ( sh)
+
+The different C-type shells follow ?
+
+C shell ( csh)
+
+TENEX/TOPS C shell ( tcsh)
+
+
+
+
+
+3: What is the significance of $?
+
+The prompt, $, which is called command prompt, is issued by the shell. While the prompt is displayed, you can type a command. The shell reads our input after we press Enter.
+For example:-
+               $date
+               Thu Jun 25 08:30:19 MST 2009 
+
+
+
+
+
+4: I want to create a directory such that anyone in the group can create a file and access any person’s file in it but none should be able to delete a file other than the one created by himself.
+
+If someone has write permission to your home directory, they can rename or delete your file and put a new file in its place. So, as per the question, the permissions that i should use are as follows :-
+
+                       chmod 755  
+
+
+
+
+5: What are zombie processes?
+
+On Unix and Unix-like computer operating systems, a zombie process or defunct process is a process that has completed execution (via the exit system call) but still has an entry in the process table: it is a process in the "Terminated state".
+
+
+
+
+
+6: How will you copy file from one machine to other?
+
+To copy a file from B to A while logged into B:
+      scp /path/to/file username@a:/path/to/destination
+
+To copy a file from B to A while logged into A:
+        scp username@b:/path/to/file /path/to/destination
+
+
+
+
+
+
+7: How to get last line from a file ?
+
+         $ tail -1 filename
+
+
+
+
+8: How to get first line from a file ?
+
+        
+
+9: What is Kernel?
+10: Differentiate multiuser from multitask.
+
+
