@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<title> My Webpage </title>
+	
+<script type="text/javascript">
+	function myfunction()
+	 {
+	   var uname = document.myform.uname.value;
+	   var gender = document.myform.g.value;
+	   var phone = document.myform.pnumber.value;
+	   var email = document.myform.email.value;
+	   var image = document.myform.image.value;
+	if (uname == "")
+	   {
+	document.getElementById("uname").innerHTML="<font color='red'>Plz enter ur name</font>";    
+	   }
+	if (gender == "")
+	{
+	document.getElementById("gender").innerHTML="<font color='red'> Plz click on a gender </font>";
+	}
+}
+	
+</script>
+	
+</head>
+
+
+<body>
+<form action="" name="myform">
+<table>
+	<tr> <td> Name : </td> <td> <input type="text" name="uname" id="uname"></td><div id="uname"> </div></tr>
+<tr> <td> Gender : </td> <td> <input type="radio" name="g" value="1"> Male <input type="radio" name="g" value="2"> Female </td> <div id="gender"> </div> </tr>
+	<tr> <td> Phone : </td> <td> <input type="text" name="pnumber"> </td> <div id="pnumber"> </div> </tr>
+<tr> <td> Email : </td> <td> <input type="text" name="email"> </td> <div id="email"> </div></tr>
+<tr> <td> Image : </td> <td> <input type="file" name="image"> </td> <div id="image"> </div> </tr> 
+	<tr> <td> </td><td> </td> <td> <input type="button" value="submit" onclick="myfunction()"> </td> </tr>
+	</table>
+	</form>
+</body>
+
+
+
+</html>
