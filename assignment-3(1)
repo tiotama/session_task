@@ -1,0 +1,14 @@
+Unix assignment -3
+----------------------
+1: What is a shell?
+2: What are the different types of commonly used shells  on a typical linux system?
+3: What is the significance of $?
+4: I want to create a directory such that anyone in the group can create a file and access any person’s file in it but none should be able to delete a file other than the one created by himself.
+5: What are zombie processes?
+6: How will you copy file from one machine to other?
+7: How to get last line from a file ?
+8: How to get first line from a file ?
+9: What is Kernel?
+10: Differentiate multiuser from multitask.
+
+
